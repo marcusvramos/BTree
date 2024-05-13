@@ -72,4 +72,14 @@ public class No
     public void setTl(int tl) {
         this.tl = tl;
     }
+
+    public void remanejarInverso(int pos) {
+        int i;
+        for(i=pos;i<tl-1;i++){
+            vInfo[i] = vInfo[i+1];
+            vPos[i]= vPos[i+1];
+            vLig[i] = vLig[i+1];
+        }
+        vLig[i] = vLig[i+1];
+    }
 }
